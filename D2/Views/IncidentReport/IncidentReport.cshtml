@@ -1,0 +1,14 @@
+﻿@model IEnumerable<D2.Models.IncidentReport>
+@{
+    ViewBag.Title = "IncidentReport";
+}
+
+<h2>IncidentReports</h2>
+<hr />
+@foreach (var item in Model)
+{
+    <p>Report No. : @item.Id</p>
+    <p>Name: @item.Name</p>
+    <p>Incident: @item.Incident</p>
+    <hr />
+}
